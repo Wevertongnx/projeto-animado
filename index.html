@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>FP Sellection</title>
 </head>
 <body>
     <header>
-        <img src="./img/logo.png" alt="logo fp">
+        <img src="./img/logo.png" alt="logo fp" />
         <nav>
             <ul>
                 <li>Home</li>
@@ -18,32 +28,59 @@
         </nav>
     </header>
 
-    <section>
+    <section class="container">
         <div class="list">
-            <div class="item">
-                <div class="car-img">
-                    <img src="./img/carro-cinza1.png" alt="imagem carro">
-                </div>
+            <div class="item active">
+              <div class="car-img">
+                <img src="./img/carro-cinza1.png" alt="imagem carro" />
+            </div>
                 <div class="content">
-                    <p class="car-information">
-                        Único Dono
-                    </p>
-                    <h2>
-                        Ferrari
+                    <p class="car-information">Único Dono</p>
+                    <h2> 
+                      911 Turbo
                     </h2>
                     <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget nunc nec nisl aliquam tincidunt
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                        eget nunc nec nisl aliquam tincidunt
                     </p>
-                    <button class="information">
-                        Saida Mais
-                    </button>
+                    <button class="information">Saida Mais</button>
+                </div>
+            </div>
+
+            <div class="item">
+              <div class="car-img">
+                <img src="./img/carro-vermelho2.png" alt="imagem carro" />
+            </div>
+                <div class="content">
+                    <p class="car-information">Conversivel</p>
+                    <h2>Ferrari</h2>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                        eget nunc nec nisl aliquam tincidunt
+                    </p>
+                    <button class="information">Saida Mais</button>
+                </div>
+            </div>
+
+            <div class="item">
+              <div class="car-img">
+                <img src="./img/carro-amarelo3.png" alt="imagem carro" />
+            </div>
+                <div class="content">
+                    <p class="car-information">2015</p>
+                    <h2>Lamborghini</h2>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                        eget nunc nec nisl aliquam tincidunt
+                    </p>
+                    <button class="information">Saida Mais</button>
                 </div>
             </div>
         </div>
-       
+
         <div class="arrows">
-            <button><img src="./img/arrow.png" alt="Seta esquerda"></button>
-            <button><img src="./img/arrow.png" alt="Seta direita"></button>
+            <button id="prev"><img src="./img/arrow.png" alt="Seta esquerda" /></button>
+            <button id="next"><img src="./img/arrow.png" alt="Seta direita" /></button>
         </div>
         <div class="indicators">
             <div class="number">01</div>
@@ -54,5 +91,6 @@
             </ul>
         </div>
     </section>
+    <script src="./script.js"></script>
 </body>
 </html>
